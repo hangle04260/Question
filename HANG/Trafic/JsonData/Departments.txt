@@ -1,0 +1,15 @@
+[
+  {
+    DepartmentID: 1,
+    DepartmentName: "Phòng hành chánh",
+    Notes: "Phòng hành chánh",
+    IsActive: true
+  },
+  {
+    DepartmentID: 2,
+    DepartmentName: "Phòng nhân sự",
+    Notes: "Phòng nhân sự",
+    IsActive: true
+  }
+]
+

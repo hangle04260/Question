@@ -1,0 +1,43 @@
+﻿using Newtonsoft.Json;
+using System;
+using System.Collections.Generic;
+using System.IO;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Web;
+
+namespace Trafic.Business
+{
+    public class QuestionBO: IQuestion
+    {
+        public List<Model.Question> GetData(int departmentID, string searchString)
+        {
+            try {
+                string jsonPath = Directory.GetCurrentDirectory();
+                jsonPath = jsonPath.Replace(@"\bin\Debug", "") + @"\JsonData\Questions.txt";
+                StreamReader jsonFile = new StreamReader(jsonPath);
+                
+                string jsonText = jsonFile.ReadToEnd();
+                var serializer = new JsonSerializer();
+
+                var questions = JsonConvert.DeserializeObject<List<Model.Question>>(jsonText);
+
+                if (departmentID != -1 && !string.IsNullOrEmpty(searchString))
+                    return questions.Where(m => m.DepartmentID == departmentID && m.QuestionName.Contains(searchString)).ToList();
+                else
+                {
+                    if(departmentID != -1)
+                        return questions.Where(m => m.DepartmentID == departmentID).ToList();
+                    else if(!string.IsNullOrEmpty(searchString))
+                        return questions.Where(m => m.QuestionName.Contains(searchString)).ToList();
+                }
+                return questions.Where(m => m.QuestionName.Contains(searchString)).ToList();
+            }
+            catch (Exception ex)
+            {
+                return null;
+            }
+        }
+    }
+}

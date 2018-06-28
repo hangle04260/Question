@@ -1,0 +1,8 @@
+C:\Users\thien\HANG\Trafic.Business\bin\Debug\Trafic.Business.dll
+C:\Users\thien\HANG\Trafic.Business\bin\Debug\Trafic.Business.pdb
+C:\Users\thien\HANG\Trafic.Business\bin\Debug\Newtonsoft.Json.dll
+C:\Users\thien\HANG\Trafic.Business\obj\Debug\Trafic.Business.csprojAssemblyReference.cache
+C:\Users\thien\HANG\Trafic.Business\obj\Debug\Trafic.Business.csproj.CoreCompileInputs.cache
+C:\Users\thien\HANG\Trafic.Business\obj\Debug\Trafic.Business.csproj.CopyComplete
+C:\Users\thien\HANG\Trafic.Business\obj\Debug\Trafic.Business.dll
+C:\Users\thien\HANG\Trafic.Business\obj\Debug\Trafic.Business.pdb

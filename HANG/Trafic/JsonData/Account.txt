@@ -1,0 +1,14 @@
+[
+  {
+    AccountID: 1,
+    Username: "hangle",
+    Password: "hangle123",
+    Fullname: "Lê Th? Thúy H?ng"
+  },
+  {
+    AccountID: 2,
+    Username: "thienle",
+    Password: "thienle123",
+    Fullname: "Lê Minh Thi?n"
+  }
+]

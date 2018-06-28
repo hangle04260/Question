@@ -1,0 +1,21 @@
+[
+  {
+	QuestionID: 1,
+	QuestionNumber: 1,
+	DepartmentID: 1,
+	QuestionName: "Người điều khiển phương tiện giao thông khi gặp đèn đỏ thì phải làm gì?",
+	AnwserNumber: 4,
+	IsImage: true,
+	ImagePath: "/Uploads/Images/cau1.jpg",
+	
+	ResultFirstText: "Dừng lại",
+	ResultSecondText: "Dừng lại",
+	ResultThirdText: "Dừng lại",
+	ResultFourText: "Dừng lại",
+	
+	IsResultFirst: true,
+	IsResultSecond: false,
+	IsResultThird: false,
+	IsResultFour: false	
+  }
+]

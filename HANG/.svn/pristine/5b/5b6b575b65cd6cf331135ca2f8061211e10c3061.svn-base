@@ -1,0 +1,212 @@
+﻿namespace Trafic.Forms
+{
+    partial class frmQuestion
+    {
+        /// <summary>
+        /// Required designer variable.
+        /// </summary>
+        private System.ComponentModel.IContainer components = null;
+
+        /// <summary>
+        /// Clean up any resources being used.
+        /// </summary>
+        /// <param name="disposing">true if managed resources should be disposed; otherwise, false.</param>
+        protected override void Dispose(bool disposing)
+        {
+            if (disposing && (components != null))
+            {
+                components.Dispose();
+            }
+            base.Dispose(disposing);
+        }
+
+        #region Windows Form Designer generated code
+
+        /// <summary>
+        /// Required method for Designer support - do not modify
+        /// the contents of this method with the code editor.
+        /// </summary>
+        private void InitializeComponent()
+        {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(frmQuestion));
+            this.gridControl = new DevExpress.XtraGrid.GridControl();
+            this.gridData = new DevExpress.XtraGrid.Views.Grid.GridView();
+            this.gridColQuestionNumber = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColQuestionName = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.gridColIsImage = new DevExpress.XtraGrid.Columns.GridColumn();
+            this.label1 = new System.Windows.Forms.Label();
+            this.cboDepartment = new DevExpress.XtraEditors.LookUpEdit();
+            this.label2 = new System.Windows.Forms.Label();
+            this.txtSearch = new System.Windows.Forms.TextBox();
+            this.btnSearch = new DevExpress.XtraEditors.SimpleButton();
+            this.btnAddNew = new DevExpress.XtraEditors.SimpleButton();
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridData)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboDepartment.Properties)).BeginInit();
+            this.SuspendLayout();
+            // 
+            // gridControl
+            // 
+            this.gridControl.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left) 
+            | System.Windows.Forms.AnchorStyles.Right)));
+            this.gridControl.Location = new System.Drawing.Point(29, 140);
+            this.gridControl.MainView = this.gridData;
+            this.gridControl.Name = "gridControl";
+            this.gridControl.Size = new System.Drawing.Size(2790, 867);
+            this.gridControl.TabIndex = 0;
+            this.gridControl.ViewCollection.AddRange(new DevExpress.XtraGrid.Views.Base.BaseView[] {
+            this.gridData});
+            // 
+            // gridData
+            // 
+            this.gridData.Columns.AddRange(new DevExpress.XtraGrid.Columns.GridColumn[] {
+            this.gridColQuestionNumber,
+            this.gridColQuestionName,
+            this.gridColIsImage});
+            this.gridData.GridControl = this.gridControl;
+            this.gridData.Name = "gridData";
+            this.gridData.OptionsView.ShowGroupPanel = false;
+            // 
+            // gridColQuestionNumber
+            // 
+            this.gridColQuestionNumber.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColQuestionNumber.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColQuestionNumber.Caption = "Câu hỏi";
+            this.gridColQuestionNumber.FieldName = "QuestionNumber";
+            this.gridColQuestionNumber.Name = "gridColQuestionNumber";
+            this.gridColQuestionNumber.Visible = true;
+            this.gridColQuestionNumber.VisibleIndex = 0;
+            this.gridColQuestionNumber.Width = 273;
+            // 
+            // gridColQuestionName
+            // 
+            this.gridColQuestionName.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColQuestionName.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColQuestionName.Caption = "Câu hỏi";
+            this.gridColQuestionName.FieldName = "QuestionName";
+            this.gridColQuestionName.Name = "gridColQuestionName";
+            this.gridColQuestionName.Visible = true;
+            this.gridColQuestionName.VisibleIndex = 1;
+            this.gridColQuestionName.Width = 2199;
+            // 
+            // gridColIsImage
+            // 
+            this.gridColIsImage.AppearanceHeader.Options.UseTextOptions = true;
+            this.gridColIsImage.AppearanceHeader.TextOptions.HAlignment = DevExpress.Utils.HorzAlignment.Center;
+            this.gridColIsImage.Caption = "Câu hỏi hình ảnh";
+            this.gridColIsImage.FieldName = "IsImage";
+            this.gridColIsImage.Name = "gridColIsImage";
+            this.gridColIsImage.Visible = true;
+            this.gridColIsImage.VisibleIndex = 2;
+            this.gridColIsImage.Width = 280;
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label1.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label1.Location = new System.Drawing.Point(734, 66);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(162, 32);
+            this.label1.TabIndex = 1;
+            this.label1.Text = "Phòng ban";
+            // 
+            // cboDepartment
+            // 
+            this.cboDepartment.Location = new System.Drawing.Point(936, 53);
+            this.cboDepartment.Name = "cboDepartment";
+            this.cboDepartment.Properties.Appearance.Font = new System.Drawing.Font("Tahoma", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.cboDepartment.Properties.Appearance.Options.UseFont = true;
+            this.cboDepartment.Properties.Buttons.AddRange(new DevExpress.XtraEditors.Controls.EditorButton[] {
+            new DevExpress.XtraEditors.Controls.EditorButton(DevExpress.XtraEditors.Controls.ButtonPredefines.Combo)});
+            this.cboDepartment.Properties.NullText = "";
+            this.cboDepartment.Size = new System.Drawing.Size(456, 54);
+            this.cboDepartment.TabIndex = 2;
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.label2.Location = new System.Drawing.Point(23, 64);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(137, 32);
+            this.label2.TabIndex = 3;
+            this.label2.Text = "Tìm kiếm";
+            // 
+            // txtSearch
+            // 
+            this.txtSearch.Font = new System.Drawing.Font("Microsoft Sans Serif", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.txtSearch.Location = new System.Drawing.Point(171, 53);
+            this.txtSearch.Name = "txtSearch";
+            this.txtSearch.Size = new System.Drawing.Size(509, 53);
+            this.txtSearch.TabIndex = 4;
+            // 
+            // btnSearch
+            // 
+            this.btnSearch.Appearance.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnSearch.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnSearch.Appearance.Options.UseFont = true;
+            this.btnSearch.Appearance.Options.UseForeColor = true;
+            this.btnSearch.Image = ((System.Drawing.Image)(resources.GetObject("btnSearch.Image")));
+            this.btnSearch.Location = new System.Drawing.Point(1420, 50);
+            this.btnSearch.Name = "btnSearch";
+            this.btnSearch.Size = new System.Drawing.Size(207, 61);
+            this.btnSearch.TabIndex = 5;
+            this.btnSearch.Text = "&Tìm kiếm";
+            this.btnSearch.Click += new System.EventHandler(this.btnSearch_Click);
+            // 
+            // btnAddNew
+            // 
+            this.btnAddNew.Appearance.Font = new System.Drawing.Font("Tahoma", 8.1F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.btnAddNew.Appearance.ForeColor = System.Drawing.Color.FromArgb(((int)(((byte)(64)))), ((int)(((byte)(64)))), ((int)(((byte)(64)))));
+            this.btnAddNew.Appearance.Options.UseFont = true;
+            this.btnAddNew.Appearance.Options.UseForeColor = true;
+            this.btnAddNew.Image = ((System.Drawing.Image)(resources.GetObject("btnAddNew.Image")));
+            this.btnAddNew.Location = new System.Drawing.Point(1678, 48);
+            this.btnAddNew.Name = "btnAddNew";
+            this.btnAddNew.Size = new System.Drawing.Size(241, 63);
+            this.btnAddNew.TabIndex = 6;
+            this.btnAddNew.Text = "&Thêm mới";
+            this.btnAddNew.Click += new System.EventHandler(this.btnAddNew_Click);
+            // 
+            // frmQuestion
+            // 
+            this.AutoScaleDimensions = new System.Drawing.SizeF(16F, 31F);
+            this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
+            this.ClientSize = new System.Drawing.Size(2845, 1040);
+            this.Controls.Add(this.btnAddNew);
+            this.Controls.Add(this.btnSearch);
+            this.Controls.Add(this.txtSearch);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.cboDepartment);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.gridControl);
+            this.Name = "frmQuestion";
+            this.Text = "DANH SÁCH CÂU HỎI";
+            this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
+            this.Load += new System.EventHandler(this.frmQuestion_Load);
+            ((System.ComponentModel.ISupportInitialize)(this.gridControl)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.gridData)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.cboDepartment.Properties)).EndInit();
+            this.ResumeLayout(false);
+            this.PerformLayout();
+
+        }
+
+        #endregion
+
+        private DevExpress.XtraGrid.GridControl gridControl;
+        private DevExpress.XtraGrid.Views.Grid.GridView gridData;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColQuestionNumber;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColQuestionName;
+        private DevExpress.XtraGrid.Columns.GridColumn gridColIsImage;
+        private System.Windows.Forms.Label label1;
+        private DevExpress.XtraEditors.LookUpEdit cboDepartment;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.TextBox txtSearch;
+        private DevExpress.XtraEditors.SimpleButton btnSearch;
+        private DevExpress.XtraEditors.SimpleButton btnAddNew;
+    }
+}
